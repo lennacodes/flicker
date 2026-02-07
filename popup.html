@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=320">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+
+    <!-- header -->
+    <header>
+      <svg class="logo" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M12 2c0 0-6 7-6 14a6 6 0 0 0 12 0c0-7-6-14-6-14z" fill="#ffb74d"/>
+        <path d="M12 9c0 0-3 4-3 8a3 3 0 0 0 6 0c0-4-3-8-3-8z" fill="#ffe082" opacity=".8"/>
+      </svg>
+      <h1>Flicker</h1>
+    </header>
+
+    <!-- master on/off -->
+    <div class="master-row">
+      <span class="master-label">Enabled</span>
+      <label class="switch switch-lg">
+        <input type="checkbox" id="global-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row toggle-row">
+      <span class="label" id="site-label">This site</span>
+      <label class="switch">
+        <input type="checkbox" id="site-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <hr>
+
+    <!-- light direction -->
+    <div class="section">
+      <span class="label">Light Direction</span>
+      <div class="dir-grid">
+        <button class="dir-btn" data-dir="top" title="Top">
+          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 3l5 8H3z" fill="currentColor"/></svg>
+          Top
+        </button>
+        <button class="dir-btn" data-dir="left" title="Left">
+          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8l8-5v10z" fill="currentColor"/></svg>
+          Left
+        </button>
+        <button class="dir-btn" data-dir="right" title="Right">
+          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M13 8l-8 5V3z" fill="currentColor"/></svg>
+          Right
+        </button>
+        <button class="dir-btn" data-dir="bottom" title="Bottom">
+          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 13l-5-8h10z" fill="currentColor"/></svg>
+          Bottom
+        </button>
+      </div>
+    </div>
+
+    <!-- core sliders -->
+    <div class="section">
+      <div class="slider-header">
+        <span class="label">Distance</span>
+        <span class="val" id="distance-val">60%</span>
+      </div>
+      <input type="range" id="distance" min="10" max="100" value="60">
+    </div>
+
+    <div class="section">
+      <div class="slider-header">
+        <span class="label">Flicker Speed</span>
+        <span class="val" id="speed-val">30</span>
+      </div>
+      <input type="range" id="speed" min="5" max="80" value="30">
+    </div>
+
+    <div class="section">
+      <div class="slider-header">
+        <span class="label">Warmth</span>
+        <span class="val" id="warmth-val">50</span>
+      </div>
+      <input type="range" id="warmth" min="0" max="100" value="50">
+    </div>
+
+    <div class="section">
+      <div class="slider-header">
+        <span class="label">Intensity</span>
+        <span class="val" id="intensity-val">25</span>
+      </div>
+      <input type="range" id="intensity" min="5" max="80" value="25">
+    </div>
+
+    <hr>
+
+    <!-- shadows group -->
+    <div class="group">
+      <div class="row toggle-row">
+        <span class="label">Shadows</span>
+        <label class="switch">
+          <input type="checkbox" id="shadows-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="sub-slider" id="shadows-sub">
+        <div class="slider-header">
+          <span class="label">Intensity</span>
+          <span class="val" id="shadowIntensity-val">50</span>
+        </div>
+        <input type="range" id="shadowIntensity" min="0" max="100" value="50">
+      </div>
+    </div>
+
+    <!-- ambient group -->
+    <div class="group">
+      <div class="row toggle-row">
+        <span class="label">Ambient Flicker</span>
+        <label class="switch">
+          <input type="checkbox" id="ambient-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="sub-slider" id="ambient-sub">
+        <div class="slider-header">
+          <span class="label">Intensity</span>
+          <span class="val" id="ambientIntensity-val">30</span>
+        </div>
+        <input type="range" id="ambientIntensity" min="5" max="100" value="30">
+      </div>
+    </div>
+
+    <hr>
+
+    <a class="support-btn" href="https://buymeacoffee.com/lennacodes" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+      </svg>
+      Support Me
+    </a>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
