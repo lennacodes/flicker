@@ -9,8 +9,7 @@
       "id": "flicker@extension",
       "strict_min_version": "140.0",
       "data_collection_permissions": {
-        "required": [],
-        "is_exempt": true
+        "required": ["none"]
       }
     }
   },
