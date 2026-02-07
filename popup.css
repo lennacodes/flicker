@@ -3,20 +3,21 @@
 
 body {
   width: 280px;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 13px;
   background: #1a1410;
   color: #e0d5c8;
 }
 
-.popup { padding: 14px 16px 16px; }
+.popup { padding: 10px 16px 12px; }
 
 /* ── header ── */
 header {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 header h1 {
   font-size: 16px;
@@ -34,8 +35,8 @@ header h1 {
   background: #241c14;
   border: 1px solid #3a2e22;
   border-radius: 8px;
-  padding: 8px 12px;
-  margin-bottom: 8px;
+  padding: 6px 12px;
+  margin-bottom: 6px;
 }
 .master-label {
   font-size: 14px;
@@ -54,13 +55,13 @@ header h1 {
   align-items: center;
   justify-content: space-between;
 }
-.toggle-row { margin-bottom: 8px; }
+.toggle-row { margin-bottom: 4px; }
 .toggle-row .label { font-size: 13px; }
 
 hr {
   border: none;
   border-top: 1px solid #3a2e22;
-  margin: 10px 0 12px;
+  margin: 6px 0 8px;
 }
 
 /* ── toggle switch ── */
@@ -97,7 +98,7 @@ hr {
 }
 
 /* ── section ── */
-.section { margin-bottom: 12px; }
+.section { margin-bottom: 8px; }
 .section > .label {
   display: block;
   font-size: 11px;
@@ -108,7 +109,7 @@ hr {
 }
 
 /* ── toggle + slider groups ── */
-.group { margin-bottom: 10px; }
+.group { margin-bottom: 6px; }
 .group .toggle-row { margin-bottom: 4px; }
 .sub-slider {
   padding-left: 10px;

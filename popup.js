@@ -39,15 +39,23 @@
   /* ── debounced storage write ── */
   let saveTimer = null;
   let pending = {};
+  function flushPending() {
+    if (saveTimer) {
+      clearTimeout(saveTimer);
+      saveTimer = null;
+    }
+    if (Object.keys(pending).length) {
+      browser.storage.local.set(pending);
+      pending = {};
+    }
+  }
   function save(patch) {
     Object.assign(cfg, patch);
     Object.assign(pending, patch);
     clearTimeout(saveTimer);
-    saveTimer = setTimeout(() => {
-      browser.storage.local.set(pending);
-      pending = {};
-    }, 180);
+    saveTimer = setTimeout(flushPending, 180);
   }
+  window.addEventListener('beforeunload', flushPending);
 
   /* ── sync sub-slider disabled states ── */
   function syncSubStates() {

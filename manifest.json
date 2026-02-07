@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Flicker",
+  "name": "Flicker — Candlelight Ambiance for Your Browser",
   "version": "1.0.0",
   "description": "A cozy, customizable candlelight overlay that reduces blue light and adds warm ambiance to any web page.",
   "permissions": ["storage"],
