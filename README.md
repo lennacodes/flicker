@@ -59,4 +59,4 @@ If you enjoy Flicker, consider supporting development:
 
 ## License
 
-All rights reserved.
+[MIT](LICENSE)
