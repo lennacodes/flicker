@@ -53,4 +53,4 @@ This privacy policy may be updated if the extension's functionality changes. Any
 
 ## Contact
 
-If you have questions about this privacy policy, you can reach out via [Buy Me a Coffee](https://buymeacoffee.com/lennacodes).
+If you have questions about this privacy policy, you can reach out via [GitHub](https://github.com/lennacodes/flicker/issues).
